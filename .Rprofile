@@ -23,3 +23,22 @@ theme_set(
   ) + 
     theme_classic()
 )
+library(tidyverse)
+
+# Load the dataset
+df=read_csv("歷年中華民國國民出國目的地人數統計2002-2024.csv",col_types = cols(.default = "c"))
+
+df_long <- df |> 
+  tidyr::pivot_longer(
+    cols = -c(首站抵達地, 細分),  # Keep the first two columns fixed
+    names_to = "Year", 
+    values_to = "Travel_Count"
+  ) |> 
+  mutate(
+    Year = as.integer(Year),  # Convert year to integer
+    Travel_Count = str_replace_all(Travel_Count, ",", "") |> as.numeric()  # Remove commas and convert to numeric
+  )
+
+# View the transformed data
+print(df_long)
+
