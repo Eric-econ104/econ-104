@@ -41,4 +41,6 @@ df_long <- df |>
 
 # View the transformed data
 print(df_long)
+view(df_long)
+write.csv(df_long, "reshaped_data.csv", row.names = FALSE)
 
