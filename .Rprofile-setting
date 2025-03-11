@@ -1,3 +1,4 @@
+file.edit(".Rprofile")
 # Set your email and name for Git
 email <- "eric108048137@gmail.com"
 name <- "Eric-econ104"
