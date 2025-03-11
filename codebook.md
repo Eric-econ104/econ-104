@@ -1,29 +1,31 @@
 
+  
+  ## Dataset Overview
+  This dataset contains statistics on the number of Taiwanese citizens traveling abroad by destination from **2002 to 2024**.
 
-#Dataset Overview
-This dataset contains statistics on the number of Taiwanese citizens traveling abroad by destination from 2002 to 2024.
+## Variables
 
-#Variables:
-首站抵達地 (First Destination) - The region where travelers first arrived (e.g., Asia, Europe).
-細分 (Subdivision) - Specific countries or territories (e.g., Japan, Korea, Hong Kong).
-2002 - 2024 - Annual travel numbers from 2002 to 2024.
-Variable Types:
-首站抵達地 (First Destination) - Categorical (String)
-細分 (Subdivision) - Categorical (String)
-2002 - 2024 (Annual travel numbers) - Currently stored as Strings (likely due to commas in numbers). Should be converted to Numeric (Integer) for analysis.
+- **首站抵達地 (First Destination)**  
+  The region where travelers first arrived (e.g., **Asia, Europe**).
 
-----------------------------------------------------------------------------------------
+- **細分 (Subdivision)**  
+  Specific countries or territories (e.g., **Japan, Korea, Hong Kong**).
 
-## Dataset Overview
+- **Year (年份)**  
+  The year of travel (from **2002 to 2024**).
 
-This dataset contains statistics on the number of Taiwanese citizens traveling abroad by destination from 2002 to 2024.
+- **Travel_Count (旅行人數)**  
+  The number of Taiwanese travelers for a given **year** and **destination**.
 
-| **Variable**            | **Description**                                                                                                                                       | **Variable Type**        |
-|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| **首站抵達地 (First Destination)**  | The region where travelers first arrived (e.g., Asia, Europe).                                                                                       | Categorical (String)     |
-| **細分 (Subdivision)**         | Specific countries or territories (e.g., Japan, Korea, Hong Kong).                                                                                  | Categorical (String)     |
-| **2002 - 2024**               | Annual travel numbers from 2002 to 2024. Numbers currently stored as Strings (likely due to commas in numbers). Should be converted to Numeric (Integer) for analysis. | Numeric (Integer)        |
+## Variable Types
 
-### Notes:
-- The **First Destination** and **Subdivision** variables are categorical, which refer to regions and specific countries/territories.
-- The travel numbers (2002-2024) are stored as strings, but should be converted to numeric values for proper analysis.
+| Variable | Type | Description |
+  |----------|------|-------------|
+  | **首站抵達地 (First Destination)** | Categorical (String) | Region where travelers first arrived |
+  | **細分 (Subdivision)** | Categorical (String) | Specific country or territory |
+  | **Year (年份)** | Integer | The year of travel (2002 - 2024) |
+  | **Travel_Count (旅行人數)** | Numeric (Integer) | The number of travelers per year per destination |
+  
+  ---
+  
+  
